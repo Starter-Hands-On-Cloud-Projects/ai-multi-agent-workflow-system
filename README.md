@@ -21,7 +21,7 @@ The pipeline executes an automated data processing assembly line split across 4 
 
 ![StateMachine](Step_Functions.png)
 
-![LambdaWF](Step_Functions.png)
+![LambdaWF](Step_Func_Workflow.png)
 
 ![InputOutput](Input_Output.png)
 
