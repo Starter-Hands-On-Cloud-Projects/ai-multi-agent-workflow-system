@@ -11,17 +11,19 @@ This system showcases how to orchestrate multiple specialized AI agents sequenti
 The pipeline executes an automated data processing assembly line split across 4 distinct serverless microservice layers:
 
 1. **Agent 1 (Classify Request):** Evaluates incoming raw text payloads to determine business classification tier and urgency categorization.
-2. **Agent 2 (Extract Data):** Implements localized extraction prompts to parse unstructured details into strict, flat JSON objects, logging structural attributes into a NoSQL datastore.
+2. **Agent 2 (Extract Data):** Implements localized extraction prompts to parse unstructured details into strict, flat JSON objects, logging structural attributes into a NoSQL datastore. (Dynamo DB)
 3. **Agent 3 (Suggest Jira Spec):** Processes the parsed telemetry variables to generate structured technical feature specifications mapped directly to software engineering backlogs.
 4. **Agent 4 (Generate Email):** Drafts context-aware, enterprise-ready communications tailored to stake-holders based on the data outputs derived downstream.
+
+
 
 ---
 
 ## 🛠️ The Tech Stack
 
-* **Orchestration Engine:** AWS Step Functions (utilizing cutting-edge JSONata payload state transformations)
+* **Orchestration Engine:** AWS Step Functions (utilizing cutting-edge JSON data payload state transformations)
 * **Compute / Serverless Layer:** AWS Lambda (Python 3.14 / Optimized Boto3 SDK runtimes)
-* **AI Core Client:** Amazon Bedrock (`amazon.nova-micro-v1:0` natively hosted in the Sydney region)
+* **AI Core Client:** Amazon Bedrock (`amazon.nova-micro-v1:0` natively hosted in the Sydney ap-southeast-2 region)
 * **Database Platform:** Amazon DynamoDB (NoSQL persistent audit logging)
 * **Identity Management:** AWS IAM (Strict, explicit identity-based execution roles and inline policies)
 
@@ -45,13 +47,4 @@ Building real-world distributed AI architectures requires navigating unexpected 
 
 ---
 
-## 📂 Repository Structure
 
-```text
-├── README.md                  # Detailed documentation and architectural breakdown
-├── state-machine.json         # Amazon States Language (ASL) JSON definition file
-└── lambdas/                   # Dedicated serverless microservice code directory
-    ├── agent_1_classify.py    # Request sorting intelligence logic
-    ├── agent_2_extract.py     # NoSQL logging and regex-json scrubbing block
-    ├── agent_3_jira.py        # Technical ticket mapping transformer
-    └── agent_4_email.py       # Notification text compiler
