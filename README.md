@@ -15,6 +15,11 @@ The pipeline executes an automated data processing assembly line split across 4 
 3. **Agent 3 (Suggest Jira Spec):** Processes the parsed telemetry variables to generate structured technical feature specifications mapped directly to software engineering backlogs.
 4. **Agent 4 (Generate Email):** Drafts context-aware, enterprise-ready communications tailored to stake-holders based on the data outputs derived downstream.
 
+![DynamoDB](Dynamo_DB_table.png)
+
+![Lambda](Lambda_Functions.png)
+
+![StateMachine](Step_Functions.png)
 
 
 ---
