@@ -1,8 +1,8 @@
-# Serverless AI Multi-Agent AI Orchestration Pipeline
+# 🚀 Serverless AI Multi-Agent AI Orchestration Pipeline
 
 A production-grade, event-driven multi-agent AI assembly line built using **AWS Step Functions**, **Amazon Bedrock (Nova Micro)**, **AWS Lambda**, and **Amazon DynamoDB**.
 
-This system showcases how to orchestrate multiple specialized AI agents sequentially without relying on rigid, heavy, hard-coded code-chaining application frameworks. By leveraging native cloud orchestration, the pipeline handles raw, unstructured corporate data, refines it, saves it to a persistent database trail, and generates actionable enterprise outputs.
+Business Change Request Automation System - This system showcases how to orchestrate multiple specialized AI agents sequentially without relying on rigid, heavy, hard-coded code-chaining application frameworks. By leveraging native cloud orchestration, the pipeline handles raw, unstructured corporate data, refines it, saves it to a persistent database trail, and generates actionable enterprise outputs.
 
 ---
 
